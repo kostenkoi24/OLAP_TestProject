@@ -1,0 +1,109 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="36f0e212-9c11-4508-80ea-b38fec369b15" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Test Scope</ID>
+  <Name>Test Scope</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Test Scope</DataSourceID>
+  <Schema>
+    <xs:schema id="Test_x0020_Scope" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Test_x0020_Scope" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="88f05416-cae1-478e-ad5f-3a1ad9540ab2">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Календарь" msprop:design-time-name="8af6b9fa-a4af-4121-ab8b-5e093aa4b272" msprop:DbTableName="Календарь" msprop:FriendlyName="Календарь" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Дата" msprop:design-time-name="994c6864-5142-4c81-bb12-aaadaee86b53" msprop:DbColumnName="Дата" msprop:FriendlyName="Дата" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Нормы" msprop:design-time-name="e0d69b2d-f793-46ce-8cf3-7da2eeb86ec6" msprop:DbTableName="Нормы" msprop:FriendlyName="Нормы" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Дата" msprop:design-time-name="9cf53bc4-61c9-4ca5-acb6-08317c6b3137" msprop:DbColumnName="Дата" msprop:FriendlyName="Дата" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="КодСклада" msprop:design-time-name="df1ef48e-ae17-46fb-bfb6-c924a3ea432a" msprop:DbColumnName="КодСклада" msprop:FriendlyName="КодСклада" type="xs:int" minOccurs="0" />
+                  <xs:element name="КодТовара" msprop:design-time-name="3fbb8ab6-34b6-4132-b40d-0a4326810770" msprop:DbColumnName="КодТовара" msprop:FriendlyName="КодТовара" type="xs:int" minOccurs="0" />
+                  <xs:element name="Норма" msprop:design-time-name="6a4cbaba-d671-4693-9828-b3c06c901011" msprop:DbColumnName="Норма" msprop:FriendlyName="Норма" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Остатки" msprop:design-time-name="5cde940f-2480-4227-afbb-c686570e74f6" msprop:DbTableName="Остатки" msprop:FriendlyName="Остатки" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Дата" msprop:design-time-name="6f27bf83-a277-4d69-883d-823c39576079" msprop:DbColumnName="Дата" msprop:FriendlyName="Дата" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="КодСклада" msprop:design-time-name="cf6feae4-bedb-4026-b05a-644eb3c9326c" msprop:DbColumnName="КодСклада" msprop:FriendlyName="КодСклада" type="xs:int" minOccurs="0" />
+                  <xs:element name="КодТовара" msprop:design-time-name="067a42e2-4dc6-4f9c-bc5e-d2d43e09b748" msprop:DbColumnName="КодТовара" msprop:FriendlyName="КодТовара" type="xs:int" minOccurs="0" />
+                  <xs:element name="Остаток" msprop:design-time-name="56b51a53-7238-4f2c-ad3b-2dfb7dd76664" msprop:DbColumnName="Остаток" msprop:FriendlyName="Остаток" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Склады" msprop:design-time-name="69fc2051-66e1-4995-abdc-bda83a0da418" msprop:DbTableName="Склады" msprop:FriendlyName="Склады" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Код" msprop:design-time-name="a9fc2e59-e5ff-4d48-852e-47c985ecd1f2" msprop:DbColumnName="Код" msprop:FriendlyName="Код" type="xs:int" minOccurs="0" />
+                  <xs:element name="Склад" msprop:design-time-name="c0f5263e-defd-4d25-ab88-858dc5d977e3" msprop:DbColumnName="Склад" msprop:FriendlyName="Склад" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Товары" msprop:design-time-name="7f24efb7-d65d-4597-9be6-97fe2141ec3e" msprop:DbTableName="Товары" msprop:FriendlyName="Товары" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Код" msprop:design-time-name="4aa7ae23-fd40-4033-b2c8-ea6b99335595" msprop:DbColumnName="Код" msprop:FriendlyName="Код" type="xs:int" />
+                  <xs:element name="Товар" msprop:design-time-name="4bf2d4e6-725e-47a9-9ed2-fc92590ae46e" msprop:DbColumnName="Товар" msprop:FriendlyName="Товар" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <Test_x0020_Scope xmlns="" />
+  </Schema>
+</DataSourceView>

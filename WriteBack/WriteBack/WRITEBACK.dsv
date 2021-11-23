@@ -1,0 +1,134 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="897ae0ef-60ff-472f-a758-b5bc4b22b247" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>WRITEBACK</ID>
+  <Name>WRITEBACK</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>WRITEBACK</DataSourceID>
+  <Schema>
+    <xs:schema id="WRITEBACK" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="WRITEBACK" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="d4332e40-bac5-4405-8bf2-4f5bf3a61126">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Calendar" msprop:design-time-name="ff52dac3-79cb-42a3-9adb-5a0a2e132a43" msprop:DbTableName="Calendar" msprop:FriendlyName="Calendar" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="dateid" msprop:design-time-name="39f4af11-bf15-411a-b009-125dc5846438" msprop:DbColumnName="dateid" msprop:FriendlyName="dateid" type="xs:int" />
+                  <xs:element name="year" msprop:design-time-name="2db930bb-a9b1-4a2a-a437-3830db3cd772" msprop:DbColumnName="year" msprop:FriendlyName="year" type="xs:int" minOccurs="0" />
+                  <xs:element name="monthnumber" msprop:design-time-name="2ebc2d05-094f-40ca-a58c-f3d61715d4b9" msprop:DbColumnName="monthnumber" msprop:FriendlyName="monthnumber" type="xs:int" minOccurs="0" />
+                  <xs:element name="monthname" msprop:design-time-name="9f4df522-d7aa-42f0-aab1-6be08254574a" msprop:DbColumnName="monthname" msprop:FriendlyName="monthname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="12" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="fulldate" msprop:design-time-name="2a601226-beda-4dfe-8f04-5fae6c7118f9" msprop:DbColumnName="fulldate" msprop:FriendlyName="fulldate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="day" msprop:design-time-name="271b7e39-5541-43dc-aca1-dfb886d0bee8" msprop:DbColumnName="day" msprop:FriendlyName="day" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Clients" msprop:design-time-name="e8cc977d-ffaf-4b5a-bf1d-bf47581512a1" msprop:DbTableName="Clients" msprop:FriendlyName="Clients" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:design-time-name="38c8ff92-0656-47a5-8fb7-123085146e5f" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="ClientName" msprop:design-time-name="3b711685-990d-4b6d-ae15-153d2e89a311" msprop:DbColumnName="ClientName" msprop:FriendlyName="ClientName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_sales" msprop:design-time-name="83c25f51-ca05-4e90-954e-fe7f0841c027" msprop:DbTableName="sales" msprop:FriendlyName="sales" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="date_id" msprop:design-time-name="fca394c1-2ecf-4da3-b686-e4c25203d071" msprop:DbColumnName="date_id" msprop:FriendlyName="date_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="client_id" msprop:design-time-name="86903e92-c1d5-46c9-bbdd-8786e5155680" msprop:DbColumnName="client_id" msprop:FriendlyName="client_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="TMC_id" msprop:design-time-name="a27611fd-dd89-49eb-a700-bff100903f82" msprop:DbColumnName="TMC_id" msprop:FriendlyName="TMC_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="Qty" msprop:design-time-name="c3d56580-1802-4fca-8b3c-735d17b5c365" msprop:DbColumnName="Qty" msprop:FriendlyName="Qty" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_TMC" msprop:design-time-name="a7f682d7-73e2-446c-aada-a3c2f4aa5101" msprop:DbTableName="TMC" msprop:FriendlyName="TMC" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:design-time-name="f54cd544-a247-4789-b40d-538e4c1639bb" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="TMC" msprop:design-time-name="43345b6e-fac4-4af7-b10f-18fa45a20937" msprop:DbColumnName="TMC" msprop:FriendlyName="TMC" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Calendar" />
+          <xs:field xpath="dateid" />
+        </xs:unique>
+        <xs:unique name="dbo_Clients_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Clients" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_TMC_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_TMC" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:keyref name="FK_sales_Clients" refer="dbo_Clients_Constraint1">
+          <xs:selector xpath=".//dbo_sales" />
+          <xs:field xpath="client_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_sales_TMC" refer="dbo_TMC_Constraint1">
+          <xs:selector xpath=".//dbo_sales" />
+          <xs:field xpath="TMC_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_sales_Calendar" refer="Constraint1">
+          <xs:selector xpath=".//dbo_sales" />
+          <xs:field xpath="date_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <WRITEBACK xmlns="" />
+  </Schema>
+</DataSourceView>

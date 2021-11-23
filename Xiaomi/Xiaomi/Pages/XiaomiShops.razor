@@ -1,0 +1,65 @@
+﻿@inject Xiaomi.Data.Repository.IRepository repository;
+
+@page "/xiaomishops"
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center">Xiaomi shops</h2>
+
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Shop code</th>
+                        <th scope="col">Xiaomi code</th>
+                        <th scope="col">Save</th>
+                    </tr>
+                </thead>
+
+                @foreach (var item in shops)
+                 {
+                    <tbody>
+                        <tr>
+                            <td>
+                                @item.ShopCode
+                            </td>
+                            <td>
+                                <input class="form-control" placeholder="@item.XiaomiCode" @bind="newCode" />
+                            </td>
+                            <td>
+                                <button class="btn btn-success" @onclick="(() => CodeChanger(item))">Save</button> 
+                            </td>
+                        </tr>
+                    </tbody>       
+
+                 }
+
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    private string newCode;
+
+    private IEnumerable<Models.Shops> shops = new List<Models.Shops>();
+
+    protected override void OnInitialized()
+    {
+        shops = repository.GetAllItems();
+    }
+
+    private void CodeChanger(Models.Shops chengedItem)
+    {
+        if (!string.IsNullOrWhiteSpace(newCode))
+        {
+            chengedItem.XiaomiCode = newCode;
+            newCode = string.Empty;
+            repository.ChangeShop(chengedItem);
+        }
+    }
+
+
+}
+

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "WriteBack", "WriteBack\WriteBack.dwproj", "{F1500C6F-E19F-467E-9347-98079F8E4D47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1500C6F-E19F-467E-9347-98079F8E4D47}.Development|Default.ActiveCfg = Development
+		{F1500C6F-E19F-467E-9347-98079F8E4D47}.Development|Default.Build.0 = Development
+		{F1500C6F-E19F-467E-9347-98079F8E4D47}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5516C845-1769-46F8-9A80-C713A981AC8D}
+	EndGlobalSection
+EndGlobal
